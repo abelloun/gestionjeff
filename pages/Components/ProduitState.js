@@ -22,8 +22,11 @@ function ProduitForm({addProduit}) {
 
 export default function ProduitState({initProduits}) {
 	const [prods, setProds] = useState(initProduits);
+	function addProduit(newProduit) {
+		// setProds(?????)
+	}
 	return <>
-		<ProduitForm />
+		<ProduitForm addProduit={} />
 		<ListeProduits produits={prods} setProduits={setProds} />
 	</>;
 }
