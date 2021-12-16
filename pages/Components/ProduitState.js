@@ -5,6 +5,6 @@ export default function ProduitState({initProduits}) {
 	
 	const [prods, setProds] = useState(initProduits);
 	
-	return <ListeProduits produits={prods} />;
+	return <ListeProduits produits={prods} setProduits={setProds} />;
 }
 
